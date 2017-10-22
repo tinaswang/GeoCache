@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8411F921F9D596A009E8265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411F911F9D596A009E8265 /* AppDelegate.swift */; };
+		D8411F941F9D596A009E8265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411F931F9D596A009E8265 /* ViewController.swift */; };
+		D8411F971F9D596A009E8265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8411F951F9D596A009E8265 /* Main.storyboard */; };
+		D8411F991F9D596A009E8265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8411F981F9D596A009E8265 /* Assets.xcassets */; };
+		D8411F9C1F9D596A009E8265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8411F9A1F9D596A009E8265 /* LaunchScreen.storyboard */; };
+		D8411FA71F9D596A009E8265 /* GeoCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411FA61F9D596A009E8265 /* GeoCacheTests.swift */; };
+		D8411FB21F9D596A009E8265 /* GeoCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411FB11F9D596A009E8265 /* GeoCacheUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8411FA31F9D596A009E8265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8411F861F9D596A009E8265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8411F8D1F9D596A009E8265;
+			remoteInfo = GeoCache;
+		};
+		D8411FAE1F9D596A009E8265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8411F861F9D596A009E8265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8411F8D1F9D596A009E8265;
+			remoteInfo = GeoCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8411F8E1F9D596A009E8265 /* GeoCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8411F911F9D596A009E8265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8411F931F9D596A009E8265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8411F961F9D596A009E8265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8411F981F9D596A009E8265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8411F9B1F9D596A009E8265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8411F9D1F9D596A009E8265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8411FA21F9D596A009E8265 /* GeoCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8411FA61F9D596A009E8265 /* GeoCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheTests.swift; sourceTree = "<group>"; };
+		D8411FA81F9D596A009E8265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8411FAD1F9D596A009E8265 /* GeoCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8411FB11F9D596A009E8265 /* GeoCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheUITests.swift; sourceTree = "<group>"; };
+		D8411FB31F9D596A009E8265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8411F8B1F9D596A009E8265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411F9F1F9D596A009E8265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411FAA1F9D596A009E8265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8411F851F9D596A009E8265 = {
+			isa = PBXGroup;
+			children = (
+				D8411F901F9D596A009E8265 /* GeoCache */,
+				D8411FA51F9D596A009E8265 /* GeoCacheTests */,
+				D8411FB01F9D596A009E8265 /* GeoCacheUITests */,
+				D8411F8F1F9D596A009E8265 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8411F8F1F9D596A009E8265 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8411F8E1F9D596A009E8265 /* GeoCache.app */,
+				D8411FA21F9D596A009E8265 /* GeoCacheTests.xctest */,
+				D8411FAD1F9D596A009E8265 /* GeoCacheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8411F901F9D596A009E8265 /* GeoCache */ = {
+			isa = PBXGroup;
+			children = (
+				D8411F911F9D596A009E8265 /* AppDelegate.swift */,
+				D8411F931F9D596A009E8265 /* ViewController.swift */,
+				D8411F951F9D596A009E8265 /* Main.storyboard */,
+				D8411F981F9D596A009E8265 /* Assets.xcassets */,
+				D8411F9A1F9D596A009E8265 /* LaunchScreen.storyboard */,
+				D8411F9D1F9D596A009E8265 /* Info.plist */,
+			);
+			path = GeoCache;
+			sourceTree = "<group>";
+		};
+		D8411FA51F9D596A009E8265 /* GeoCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8411FA61F9D596A009E8265 /* GeoCacheTests.swift */,
+				D8411FA81F9D596A009E8265 /* Info.plist */,
+			);
+			path = GeoCacheTests;
+			sourceTree = "<group>";
+		};
+		D8411FB01F9D596A009E8265 /* GeoCacheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8411FB11F9D596A009E8265 /* GeoCacheUITests.swift */,
+				D8411FB31F9D596A009E8265 /* Info.plist */,
+			);
+			path = GeoCacheUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8411F8D1F9D596A009E8265 /* GeoCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8411FB61F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCache" */;
+			buildPhases = (
+				D8411F8A1F9D596A009E8265 /* Sources */,
+				D8411F8B1F9D596A009E8265 /* Frameworks */,
+				D8411F8C1F9D596A009E8265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoCache;
+			productName = GeoCache;
+			productReference = D8411F8E1F9D596A009E8265 /* GeoCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8411FA11F9D596A009E8265 /* GeoCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8411FB91F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCacheTests" */;
+			buildPhases = (
+				D8411F9E1F9D596A009E8265 /* Sources */,
+				D8411F9F1F9D596A009E8265 /* Frameworks */,
+				D8411FA01F9D596A009E8265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8411FA41F9D596A009E8265 /* PBXTargetDependency */,
+			);
+			name = GeoCacheTests;
+			productName = GeoCacheTests;
+			productReference = D8411FA21F9D596A009E8265 /* GeoCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8411FAC1F9D596A009E8265 /* GeoCacheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8411FBC1F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCacheUITests" */;
+			buildPhases = (
+				D8411FA91F9D596A009E8265 /* Sources */,
+				D8411FAA1F9D596A009E8265 /* Frameworks */,
+				D8411FAB1F9D596A009E8265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8411FAF1F9D596A009E8265 /* PBXTargetDependency */,
+			);
+			name = GeoCacheUITests;
+			productName = GeoCacheUITests;
+			productReference = D8411FAD1F9D596A009E8265 /* GeoCacheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8411F861F9D596A009E8265 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tina Wang";
+				TargetAttributes = {
+					D8411F8D1F9D596A009E8265 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					D8411FA11F9D596A009E8265 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8411F8D1F9D596A009E8265;
+					};
+					D8411FAC1F9D596A009E8265 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8411F8D1F9D596A009E8265;
+					};
+				};
+			};
+			buildConfigurationList = D8411F891F9D596A009E8265 /* Build configuration list for PBXProject "GeoCache" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8411F851F9D596A009E8265;
+			productRefGroup = D8411F8F1F9D596A009E8265 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8411F8D1F9D596A009E8265 /* GeoCache */,
+				D8411FA11F9D596A009E8265 /* GeoCacheTests */,
+				D8411FAC1F9D596A009E8265 /* GeoCacheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8411F8C1F9D596A009E8265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8411F9C1F9D596A009E8265 /* LaunchScreen.storyboard in Resources */,
+				D8411F991F9D596A009E8265 /* Assets.xcassets in Resources */,
+				D8411F971F9D596A009E8265 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411FA01F9D596A009E8265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411FAB1F9D596A009E8265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8411F8A1F9D596A009E8265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8411F941F9D596A009E8265 /* ViewController.swift in Sources */,
+				D8411F921F9D596A009E8265 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411F9E1F9D596A009E8265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8411FA71F9D596A009E8265 /* GeoCacheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8411FA91F9D596A009E8265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8411FB21F9D596A009E8265 /* GeoCacheUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8411FA41F9D596A009E8265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8411F8D1F9D596A009E8265 /* GeoCache */;
+			targetProxy = D8411FA31F9D596A009E8265 /* PBXContainerItemProxy */;
+		};
+		D8411FAF1F9D596A009E8265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8411F8D1F9D596A009E8265 /* GeoCache */;
+			targetProxy = D8411FAE1F9D596A009E8265 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8411F951F9D596A009E8265 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8411F961F9D596A009E8265 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8411F9A1F9D596A009E8265 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8411F9B1F9D596A009E8265 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8411FB41F9D596A009E8265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8411FB51F9D596A009E8265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8411FB71F9D596A009E8265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8411FB81F9D596A009E8265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8411FBA1F9D596A009E8265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoCache.app/GeoCache";
+			};
+			name = Debug;
+		};
+		D8411FBB1F9D596A009E8265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoCache.app/GeoCache";
+			};
+			name = Release;
+		};
+		D8411FBD1F9D596A009E8265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoCache;
+			};
+			name = Debug;
+		};
+		D8411FBE1F9D596A009E8265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ER69X8S68;
+				INFOPLIST_FILE = GeoCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tswang.GeoCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoCache;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8411F891F9D596A009E8265 /* Build configuration list for PBXProject "GeoCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8411FB41F9D596A009E8265 /* Debug */,
+				D8411FB51F9D596A009E8265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8411FB61F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8411FB71F9D596A009E8265 /* Debug */,
+				D8411FB81F9D596A009E8265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8411FB91F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8411FBA1F9D596A009E8265 /* Debug */,
+				D8411FBB1F9D596A009E8265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8411FBC1F9D596A009E8265 /* Build configuration list for PBXNativeTarget "GeoCacheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8411FBD1F9D596A009E8265 /* Debug */,
+				D8411FBE1F9D596A009E8265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8411F861F9D596A009E8265 /* Project object */;
+}
