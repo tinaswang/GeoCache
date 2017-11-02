@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var creatorField: UITextField!
     @IBOutlet weak var rewardField: UITextField!
     @IBOutlet weak var cacheField: UILabel!
+
     
     // Take whatever’s entered in the four text fields,
     // and use them to create a new GeoCache.
@@ -60,8 +61,9 @@ class ViewController: UIViewController {
     // Cycle the cache displayed in the cacheLabel, 
     // and setting the cacheLabel to the description property of that GeoCache
     @IBAction func nextCache(_ sender: UIButton) {
+        cacheField.numberOfLines = 0
         cacheField.text = self.geocache_arr[counter].description
-        if counter < self.geocache_arr.count {
+        if counter < self.geocache_arr.count - 1 {
             counter += 1
         }
         else {

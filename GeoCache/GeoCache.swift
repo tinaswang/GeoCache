@@ -68,8 +68,8 @@ struct GeoCache {
     
     var description: String {
         get {
-            return "\(title): \n Located at \(details) " +
-                    "with reward \(reward).\nCreated by \(creator)."
+            return ("\(title): \nLocated at \(details)" +
+                    " with reward \(reward).\nCreated by \(creator).")
         }
     }
 }
