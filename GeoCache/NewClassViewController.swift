@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewCacheViewController.swift
 //  GeoCache
 //
 // Created by Tina Wang on 10/22/17.
@@ -7,30 +7,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NewCacheViewController: UIViewController {
     // Create a GeoCache array
-    var geocache_arr =  [GeoCache]()
+    var cache : GeoCache? = nil
     // Create a counter variable for cycling through GeoCaches
-    var counter : Int = 0
+    // var counter : Int = 0
     // IBOOutlet for the text fields
 
     @IBOutlet weak var titleField: UITextField!
+    
     @IBOutlet weak var detailField: UITextField!
+    
     @IBOutlet weak var creatorField: UITextField!
+    
     @IBOutlet weak var rewardField: UITextField!
+    
     @IBOutlet weak var cacheField: UILabel!
-
+    
     
     // Take whatever’s entered in the four text fields,
     // and use them to create a new GeoCache.
     // Print an error message if any of these fields are empty.
     // Add the new GeoCache to the list of caches, and save the list
     // of caches to the UserDefaults.
-
-    @IBAction func addGeoCache(_ sender: UIButton) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        cache = nil
         var geo_dict = [String: String]()
         if let value : String = titleField.text {
-           geo_dict["title"] =  value
+            geo_dict["title"] =  value
         }
         else {
             cacheField.text = "Error: No title given."
@@ -54,27 +58,25 @@ class ViewController: UIViewController {
         else {
             cacheField.text = "Error: No reward given."
         }
+        
+        cache = (GeoCache(fromDictionary: geo_dict)!)
 
-        geocache_arr.append(GeoCache(fromDictionary: geo_dict)!)
+    }
+
+
+    // cancel: Call when the user does not want to save the GeoCache
+    // and presses the 'cancel' button.
+   @IBAction func cancel(sender: UIBarButtonItem) {
+        // set cache property to nil
+        cache = nil
+        // call dismiss method
+        self.dismiss(animated: true, completion: nil)
     }
     
-    // Cycle the cache displayed in the cacheLabel, 
-    // and setting the cacheLabel to the description property of that GeoCache
-    @IBAction func nextCache(_ sender: UIButton) {
-        cacheField.numberOfLines = 0
-        cacheField.text = self.geocache_arr[counter].description
-        if counter < self.geocache_arr.count - 1 {
-            counter += 1
-        }
-        else {
-            counter = 0
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // load the saved GeoCaches from the UserDefaults when the app is started
-        self.geocache_arr = loadCachesFromDefaults()
     }
 
     override func didReceiveMemoryWarning() {

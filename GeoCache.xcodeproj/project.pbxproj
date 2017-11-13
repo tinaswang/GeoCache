@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D8411F921F9D596A009E8265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411F911F9D596A009E8265 /* AppDelegate.swift */; };
-		D8411F941F9D596A009E8265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411F931F9D596A009E8265 /* ViewController.swift */; };
+		D8411F941F9D596A009E8265 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411F931F9D596A009E8265 /* NewClassViewController.swift */; };
 		D8411F971F9D596A009E8265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8411F951F9D596A009E8265 /* Main.storyboard */; };
 		D8411F991F9D596A009E8265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8411F981F9D596A009E8265 /* Assets.xcassets */; };
 		D8411F9C1F9D596A009E8265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8411F9A1F9D596A009E8265 /* LaunchScreen.storyboard */; };
 		D8411FA71F9D596A009E8265 /* GeoCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411FA61F9D596A009E8265 /* GeoCacheTests.swift */; };
 		D8411FB21F9D596A009E8265 /* GeoCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411FB11F9D596A009E8265 /* GeoCacheUITests.swift */; };
 		D8411FC01F9D5C3B009E8265 /* GeoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8411FBF1F9D5C3B009E8265 /* GeoCache.swift */; };
+		D85455CC1FB522A000BFB0F1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455CB1FB522A000BFB0F1 /* DetailViewController.swift */; };
+		D8D6AF7F1FAFE312000AA578 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AF7E1FAFE312000AA578 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D8411F8E1F9D596A009E8265 /* GeoCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8411F911F9D596A009E8265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8411F931F9D596A009E8265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8411F931F9D596A009E8265 /* NewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
 		D8411F961F9D596A009E8265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8411F981F9D596A009E8265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8411F9B1F9D596A009E8265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		D8411FB11F9D596A009E8265 /* GeoCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheUITests.swift; sourceTree = "<group>"; };
 		D8411FB31F9D596A009E8265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8411FBF1F9D5C3B009E8265 /* GeoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCache.swift; sourceTree = "<group>"; };
+		D85455CB1FB522A000BFB0F1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D8D6AF7E1FAFE312000AA578 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		D8411F851F9D596A009E8265 = {
 			isa = PBXGroup;
 			children = (
+				D8D6AF7E1FAFE312000AA578 /* TableViewController.swift */,
 				D8411F901F9D596A009E8265 /* GeoCache */,
 				D8411FA51F9D596A009E8265 /* GeoCacheTests */,
 				D8411FB01F9D596A009E8265 /* GeoCacheUITests */,
@@ -100,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				D8411F911F9D596A009E8265 /* AppDelegate.swift */,
-				D8411F931F9D596A009E8265 /* ViewController.swift */,
+				D8411F931F9D596A009E8265 /* NewClassViewController.swift */,
 				D8411F951F9D596A009E8265 /* Main.storyboard */,
+				D85455CB1FB522A000BFB0F1 /* DetailViewController.swift */,
 				D8411FBF1F9D5C3B009E8265 /* GeoCache.swift */,
 				D8411F981F9D596A009E8265 /* Assets.xcassets */,
 				D8411F9A1F9D596A009E8265 /* LaunchScreen.storyboard */,
@@ -263,8 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8411FC01F9D5C3B009E8265 /* GeoCache.swift in Sources */,
-				D8411F941F9D596A009E8265 /* ViewController.swift in Sources */,
+				D8411F941F9D596A009E8265 /* NewClassViewController.swift in Sources */,
+				D85455CC1FB522A000BFB0F1 /* DetailViewController.swift in Sources */,
 				D8411F921F9D596A009E8265 /* AppDelegate.swift in Sources */,
+				D8D6AF7F1FAFE312000AA578 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
