@@ -32,7 +32,7 @@ class NewCacheViewController: UIViewController {
     // of caches to the UserDefaults.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         cache = nil
-        var geo_dict = [String: String]()
+        var geo_dict = [String: Any]()
         if let value : String = titleField.text {
             geo_dict["title"] =  value
         }
@@ -58,9 +58,10 @@ class NewCacheViewController: UIViewController {
         else {
             cacheField.text = "Error: No reward given."
         }
-        
-        cache = (GeoCache(fromDictionary: geo_dict)!)
-
+        geo_dict["id"] = randomCacheId()
+        if let new_cache: GeoCache = GeoCache(fromDictionary: geo_dict) {
+            cache = (new_cache)
+        }
     }
 
 

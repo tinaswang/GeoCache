@@ -14,9 +14,16 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Load the array of GeoCaches from UserDefaults
-       self.geocache_arr = loadCachesFromDefaults()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        // Create closure to store all the GeoCache array information
+        let closure: ([GeoCache]) -> () = { (caches) in
+            self.geocache_arr = caches
+            self.tableView.reloadData()
+        }
+        // Load the array of GeoCaches from the closure
+        loadCachesFromServer(onComplete: closure)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +47,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
 
-        cell.textLabel?.text = geocache_arr[indexPath.row].dictionary["title"]
+        cell.textLabel?.text = (geocache_arr[indexPath.row].dictionary["title"] as! String)
         return cell
         
     }
@@ -55,8 +62,8 @@ class TableViewController: UITableViewController {
                 let indexPath = [IndexPath(row: geocache_arr.count, section: 0)]
                 geocache_arr.append(cache_temp)
                 tableView.insertRows(at: indexPath, with: .fade)
-                // Save the cache list to UserDefaults
-                saveCachesToDefaults(geocache_arr)
+                // Send the GeoCache to the server
+                sendCacheToServer(cache_temp)
             }
             else {
                 return
@@ -79,7 +86,6 @@ class TableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         if (segue.identifier == "ToDetail") {
             let row = (sender as? IndexPath)?.row
-            print(segue.destination)
             if let detail_holder : DetailViewController = (segue.destination as? DetailViewController) {
                 // Set description to the description of geocache_arr[row]
                 if let row_holder : Int = row {
