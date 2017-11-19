@@ -29,30 +29,31 @@ class NewCacheViewController: UIViewController {
     // and use them to create a new GeoCache.
     // Print an error message if any of these fields are empty.
     // Add the new GeoCache to the list of caches, and save the list
-    // of caches to the UserDefaults.
+    // of caches to the server.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         cache = nil
         var geo_dict = [String: Any]()
-        if let value : String = titleField.text {
+        if let value : String = titleField.text, !value.isEmpty  {
             geo_dict["title"] =  value
         }
         else {
             cacheField.text = "Error: No title given."
+            return
         }
         
-        if let value : String = detailField.text {
+        if let value : String = detailField.text, !value.isEmpty  {
             geo_dict["details"] =  value
         }
         else {
             cacheField.text = "Error: No details given."
         }
-        if let value : String = creatorField.text {
+        if let value : String = creatorField.text, !value.isEmpty  {
             geo_dict["creator"] =  value
         }
         else {
             cacheField.text = "Error: No creator given."
         }
-        if let value : String = rewardField.text {
+        if let value : String = rewardField.text, !value.isEmpty  {
             geo_dict["reward"] =  value
         }
         else {
@@ -77,7 +78,7 @@ class NewCacheViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // load the saved GeoCaches from the UserDefaults when the app is started
+        // load the saved GeoCaches from the server when the app is started
     }
 
     override func didReceiveMemoryWarning() {

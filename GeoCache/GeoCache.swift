@@ -20,28 +20,28 @@ struct GeoCache {
     //    If any of these is missing, the initializer returns nil.
     init?(fromDictionary dict: [String: Any]) {
         // Check whether each value is present
-        if let value : String = dict["title"] as? String {
+        if let value : String = dict["title"] as? String, !value.isEmpty {
             self.title = value
         }
         else {
             return nil
         }
         
-        if let value: String = dict["details"] as? String {
+        if let value: String = dict["details"] as? String, !value.isEmpty  {
             self.details = value
         }
         
         else {
             return nil
         }
-        if let value : String = dict["creator"] as? String {
+        if let value : String = dict["creator"] as? String, !value.isEmpty  {
             self.creator = value
         }
         else {
             return nil
         }
         
-        if let value: String = dict["reward"] as? String {
+        if let value: String = dict["reward"] as? String, !value.isEmpty  {
             self.reward = value
         }
             
