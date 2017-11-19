@@ -14,16 +14,16 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
         // Create closure to store all the GeoCache array information
         let closure: ([GeoCache]) -> () = { (caches) in
             self.geocache_arr = caches
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         // Load the array of GeoCaches from the closure
         loadCachesFromServer(onComplete: closure)
+        
     }
 
     override func didReceiveMemoryWarning() {

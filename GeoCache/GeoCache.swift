@@ -85,7 +85,7 @@ struct GeoCache {
     func randomCacheId() -> Int {
         return Int(arc4random())
     }
-    // Send a dictionary representing a GeoCache to the server by making a request to serverURL/createCache with a POST method and a body which is the JSON data.
+    // Send a dictionary representing a GeoCache to the server by making a request with a POST method.
     func sendCacheToServer(_ cache: GeoCache) {
         var request = URLRequest(url: URL(string: "http://localhost:5000/createCache")!)
         // set the httpMethod and httpBody fields of the URLRequest
@@ -94,7 +94,7 @@ struct GeoCache {
         let data = try? JSONSerialization.data(withJSONObject: cache.dictionary)
         request.httpBody = data
         // set the http header “Content-Type” to “application/json”
-        request.setValue("Content-Type", forHTTPHeaderField: "application/json")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         // Make a request
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
@@ -108,8 +108,8 @@ struct GeoCache {
     
     
     
-//    Make a GET request to the server at the endpoint /getCaches to get all the
-// server's GeoCaches.
+//    Make a GET request to the server at the endpoint /getCaches
+// to get all the server's GeoCaches.
 
     func loadCachesFromServer(onComplete: @escaping ([GeoCache]) -> ()) {
         // Result array of GeoCaches
