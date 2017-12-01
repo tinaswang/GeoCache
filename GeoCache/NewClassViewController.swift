@@ -7,7 +7,12 @@
 
 import UIKit
 
-class NewCacheViewController: UIViewController {
+class NewCacheViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+
+    @IBOutlet weak var imagePreview: UIImageView!
+    // create a UIImagePickerController()
+    let picker = UIImagePickerController()
     // Create a GeoCache array
     var cache : GeoCache? = nil
     // Create a counter variable for cycling through GeoCaches
@@ -60,6 +65,7 @@ class NewCacheViewController: UIViewController {
             cacheField.text = "Error: No reward given."
         }
         geo_dict["id"] = randomCacheId()
+        geo_dict["image"] = imagePreview.image
         if let new_cache: GeoCache = GeoCache(fromDictionary: geo_dict) {
             cache = (new_cache)
         }
@@ -75,17 +81,39 @@ class NewCacheViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // Called when an image is selected
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        if let img : UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imagePreview.image = img
+            imagePreview?.contentMode = .scaleAspectFit
+            picker.dismiss(animated: true, completion: nil)
+        }
+    
+    }
+    // dismiss the picker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // load the saved GeoCaches from the server when the app is started
+        picker.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // Allow for photo editing
+    @IBAction func pickImage(_ sender: Any) {
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        present(picker, animated: true, completion: nil)
+    }
+    
+    
 }
 

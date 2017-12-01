@@ -21,8 +21,21 @@ class TableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+
         // Load the array of GeoCaches from the closure
         loadCachesFromServer(onComplete: closure)
+        
+        for i in self.geocache_arr {
+            // Assign images to caches
+            let img_closure: (UIImage) -> () = { (image) in
+                for j in 0...self.geocache_arr.count {
+                    if self.geocache_arr[j].id == i.id {
+                        self.geocache_arr[j].image = image
+                    }
+                }
+            }
+            pullImageFromServer(id: i.id, number: 0, onComplete: img_closure)
+        }
         
     }
 
@@ -90,6 +103,8 @@ class TableViewController: UITableViewController {
                 // Set description to the description of geocache_arr[row]
                 if let row_holder : Int = row {
                     detail_holder.descrip = geocache_arr[row_holder].description
+                    detail_holder.cache = geocache_arr[row_holder]
+                    
                 }
             }
         }

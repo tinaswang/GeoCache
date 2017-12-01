@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,6 +72,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-fd-5hb">
+                                <rect key="frame" x="36" y="216" width="316" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="uy0-ZZ-dae"/>
@@ -78,6 +83,7 @@
                     <navigationItem key="navigationItem" id="kzn-qb-lqq"/>
                     <connections>
                         <outlet property="descriptionText" destination="x3I-eR-vpl" id="7Jz-3h-uZ5"/>
+                        <outlet property="detailImage" destination="Kjw-fd-5hb" id="aM9-LK-UZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qv-Un-5fO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,8 +161,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-7k-6hi">
+                                <rect key="frame" x="44" y="295" width="240" height="347"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsn-cK-fph">
-                                <rect key="frame" x="33" y="342" width="311" height="133"/>
+                                <rect key="frame" x="32" y="308" width="311" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -172,16 +182,24 @@
                                 <action selector="cancelWithSender:" destination="BYZ-38-t0r" id="lxf-Am-oQg"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="grL-dw-2VK">
-                            <connections>
-                                <segue destination="cIO-CL-vfQ" kind="unwind" unwindAction="unwindToTableWithSender:" id="Bi1-nh-TKU"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="save" id="grL-dw-2VK">
+                                <connections>
+                                    <segue destination="cIO-CL-vfQ" kind="unwind" unwindAction="unwindToTableWithSender:" id="Bi1-nh-TKU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="qGG-1k-6u7">
+                                <connections>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" id="xrR-CQ-2zg"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="cacheField" destination="Rsn-cK-fph" id="kWI-1Q-5Wp"/>
                         <outlet property="creatorField" destination="xrY-eC-leS" id="9EP-9V-Vv5"/>
                         <outlet property="detailField" destination="ILM-NZ-wZX" id="u0I-fr-pr3"/>
+                        <outlet property="imagePreview" destination="NY8-7k-6hi" id="V3X-oU-BVi"/>
                         <outlet property="rewardField" destination="bxF-es-4vf" id="zdY-LF-63u"/>
                         <outlet property="titleField" destination="qUO-wg-5bY" id="Ub1-hc-AXU"/>
                     </connections>
