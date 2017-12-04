@@ -170,21 +170,19 @@ struct GeoCache {
         }
         task.resume()
     }
-// make a request to the server’s /addPicture endpoint
-//
-//There’s an endpoint in the cacheServer which adds a picture associated with the given GeoCache: /addPicture?id=<id> - to use it, you need the cache ID you’re trying to add a picture for, and you put that at the end of the URL. You also need to attach as the body of the HTTP request the JPEG file of the image.
+
+// Make a request to the server’s /addPicture endpoint
+// to send the image to the server.
+
 func sendImage(id: Int, image: UIImage) {
     print("Sending image")
-    // construct the URL with the given id at the end of it,
-    // The completion handler for this request doesn’t need to do anything
-    // besides printing an error description, if an error occurs.
-    
+    // construct the URL with the given id at the end of it
     var request = URLRequest(url: URL(
                 string: ("http://localhost:5000/addPicture?id=\(id)"))!)
     // set the httpMethod and httpBody fields of the URLRequest
     request.httpMethod = "POST"
     // Serialize dictionary representation of GeoCache in JSON
-    let data = UIImageJPEGRepresentation(image, 0.2)
+    let data = UIImageJPEGRepresentation(image, 0.25)
     request.httpBody = data
     // set the http header “Content-Type” to “application/json”
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -7,7 +7,8 @@
 
 import UIKit
 
-class NewCacheViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NewCacheViewController: UIViewController, UIImagePickerControllerDelegate,
+                                                UINavigationControllerDelegate {
     
 
     @IBOutlet weak var imagePreview: UIImageView!
